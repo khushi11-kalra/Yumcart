@@ -1,0 +1,58 @@
+# ===== FRONTEND (React) =====
+frontend-react/node_modules/
+frontend-react/build/
+frontend-react/.env
+frontend-react/.DS_Store
+
+# ===== BACKEND (Spring Boot - Maven) =====
+backend-spring boot/HELP.md
+backend-spring boot/target/
+!backend-spring boot/.mvn/wrapper/maven-wrapper.jar
+
+# Allow target inside source dirs (usually not needed, but keeping from original)
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Eclipse / STS
+backend-spring boot/.apt_generated
+backend-spring boot/.classpath
+backend-spring boot/.factorypath
+backend-spring boot/.project
+backend-spring boot/.settings/
+backend-spring boot/.springBeans
+backend-spring boot/.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+backend-spring boot/nbproject/private/
+backend-spring boot/nbbuild/
+backend-spring boot/dist/
+backend-spring boot/nbdist/
+backend-spring boot/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Gradle (if any future Gradle support is added)
+.gradle/
+build/
+
+# ===== COMMON IGNORES =====
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Prevent committing sensitive config (if you have .env or secrets)
+**/.env
+**/application.properties
+**/application.yml
+**/application-dev.properties
+**/application-prod.properties
